@@ -3,15 +3,15 @@
 Une application flutter présentant mon Curriculum Vitae.
 Cette application est multilingue: Ar, Fr et En, elle permet à l'utilisateur de choisir entre le thème clair ou sombre en gardant son choix même après l'arrêt de l'application.
 
-## 🚀 Authors
+## 🚀 Auteur
 
 - [@saididhaou](https://www.github.com/saididhaou)
 
-## 🚀 About Me
+## 🚀 A propos de moi
 
 Etudiant en première année Master prof. en Developpement des Systèmes d'Information et Réseaux (DSIR) à ISET Sfax.
 
-## Packages utilisé:
+## 🚀 Packages utilisé:
 
 - [flutter_native_splash](https://pub.dev/packages/flutter_native_splash)
 - [flex_color_scheme](https://pub.dev/packages/flex_color_scheme)
@@ -20,7 +20,7 @@ Etudiant en première année Master prof. en Developpement des Systèmes d'Infor
 - [url_launcher](https://pub.dev/packages/url_launcher)
 - [google_maps_flutter](https://pub.dev/packages/google_maps_flutter)
 
-## Screenshots
+## 🚀 Screenshots
 
 ![App Screenshot](assets/screenshots/Screenshot_0.jpg)
 ![App Screenshot](assets/screenshots/Screenshot_1.jpg)
