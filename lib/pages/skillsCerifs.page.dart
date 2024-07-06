@@ -4,8 +4,8 @@ import 'package:saididhaou/localization/locales.dart';
 
 class SkillsCertifsPage extends StatelessWidget {
   final List<Skill> skills = [
-    Skill(name: 'Java', level: 0.8),
     Skill(name: 'C', level: 0.8),
+    Skill(name: 'Java', level: 0.8),
     Skill(name: 'C++', level: 0.5),
     Skill(name: 'Flutter', level: 0.7),
     Skill(name: 'Dart', level: 0.7),
