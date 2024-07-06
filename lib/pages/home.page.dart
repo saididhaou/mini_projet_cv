@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localization/flutter_localization.dart';
 
 import '../pages/personelInfo.page.dart';
-import '../pages/portfolio.page.dart';
 import '../pages/profAdress.page.dart';
 import '../pages/skillsCerifs.page.dart';
 import '../pages/studies.page.dart';
@@ -45,8 +44,6 @@ class _HomePageState extends State<HomePage> {
       case 3:
         return SkillsCertifsPage();
       case 4:
-        return PortfolioPage();
-      case 5:
         return MapScreen();
       default:
         return PersonalInfoPage();

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localization/flutter_localization.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../localization/locales.dart';
 
 class PersonalInfoPage extends StatelessWidget {
   const PersonalInfoPage({super.key});
@@ -11,6 +14,16 @@ class PersonalInfoPage extends StatelessWidget {
         padding: EdgeInsets.all(10),
         child: Column(
           children: [
+            Center(
+                child: Text(
+                  LocaleData.pers_info_title.getString(context),
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
             const Padding(
               padding: EdgeInsets.all(10.0),
               child: Center(
@@ -33,13 +46,13 @@ class PersonalInfoPage extends StatelessWidget {
                 const SizedBox(width: 15),
                 const SelectableText("+21697793301"),
                 const SizedBox(width: 15),
-                ElevatedButton(
+                TextButton(
                   onPressed: () async {
                     final Uri url = Uri(scheme: 'tel', path: '+21697793301');
                     if (await canLaunchUrl(url)) {
                       await launchUrl(url);
                     } else {
-                      print("Cannot launch this url");
+                      print(LocaleData.error_url.getString(context));
                     }
                   },
                   child: Icon(Icons.phone),
@@ -73,10 +86,10 @@ class PersonalInfoPage extends StatelessWidget {
                     if (await canLaunchUrl(emailUrl)) {
                       await launchUrl(emailUrl);
                     } else {
-                      print("Cannot launch this url");
+                      print(LocaleData.error_url.getString(context));
                     }
                   },
-                  child: Text('infonet.saidi@gmail.com'),
+                  child: Text(LocaleData.send_mail.getString(context)),
                 ),
               ],
             ),
@@ -96,10 +109,33 @@ class PersonalInfoPage extends StatelessWidget {
                       await launchUrl(gitlUrl,
                           mode: LaunchMode.externalApplication);
                     } else {
-                      print("Cannot launch this url");
+                      print(LocaleData.error_url.getString(context));
                     }
                   },
-                  child: Text('github.com/saididhaou'),
+                  child: Text('GitHub'),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                const Image(
+                  image: AssetImage("assets/images/facebook_icon.png"),
+                  width: 25,
+                  height: 25,
+                ),
+                const SizedBox(width: 15),
+                TextButton(
+                  onPressed: () async {
+                    final Uri fblUrl =
+                        Uri.parse("http://fb.com/dhaou.dhs");
+                    if (await canLaunchUrl(fblUrl)) {
+                      await launchUrl(fblUrl,
+                          mode: LaunchMode.externalApplication);
+                    } else {
+                      print(LocaleData.error_url.getString(context));
+                    }
+                  },
+                  child: Text('Facebook'),
                 ),
               ],
             ),

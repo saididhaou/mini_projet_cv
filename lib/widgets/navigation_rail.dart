@@ -53,13 +53,8 @@ class _MyNavigationRailState extends State<MyNavigationRail> {
           label: Text(LocaleData.skills_cerifs.getString(context)),
         ),
         NavigationRailDestination(
-          icon: const Icon(Icons.folder_copy_outlined),
-          selectedIcon: const Icon(Icons.folder_copy),
-          label: Text(LocaleData.portfolio.getString(context)),
-        ),
-        NavigationRailDestination(
-          icon: const Icon(Icons.location_on),
-          selectedIcon: const Icon(Icons.location_on),
+          icon: const Icon(Icons.location_on_outlined),
+          selectedIcon: const Icon(Icons.location_on_outlined),
           label: Text(LocaleData.adress.getString(context)),
         ),
       ],
