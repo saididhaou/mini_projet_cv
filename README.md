@@ -13,7 +13,13 @@ Etudiant en première année Master prof. en Developpement des Systèmes d'Infor
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](assets/screenshots/Screenshot_0.jpg)
+![App Screenshot](assets/screenshots/Screenshot_1.jpg)
+![App Screenshot](assets/screenshots/Screenshot_2.jpg)
+![App Screenshot](assets/screenshots/Screenshot_3.jpg)
+![App Screenshot](assets/screenshots/Screenshot_4.jpg)
+![App Screenshot](assets/screenshots/Screenshot_5.jpg)
+![App Screenshot](assets/screenshots/Screenshot_6.jpg)
 
 ## Packages utilisé:
 
